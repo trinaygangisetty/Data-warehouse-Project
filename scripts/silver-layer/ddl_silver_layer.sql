@@ -37,12 +37,13 @@ GO
 
 CREATE TABLE silver_layer.crm_prod_info (
 	prod_id			INT,
+	cat_id			NVARCHAR(50),
 	prod_key		NVARCHAR(50),
 	prod_name		NVARCHAR(50),
 	prod_cost		INT,
 	prod_line		NVARCHAR(50),
-	prod_start_dt	DATETIME,
-	prod_end_dt		DATETIME,
+	prod_start_dt	DATE,
+	prod_end_dt		DATE,
 	dwh_create_date DATETIME2 DEFAULT GETDATE()
 );
 GO
@@ -55,9 +56,9 @@ CREATE TABLE silver_layer.crm_sales_details (
 	sls_ord_num		NVARCHAR(50),
     sls_prd_key		NVARCHAR(50),
     sls_cust_id		INT,
-    sls_order_dt	INT,
-    sls_ship_dt		INT,
-    sls_due_dt		INT,
+    sls_order_dt	DATE,
+    sls_ship_dt		DATE,
+    sls_due_dt		DATE,
     sls_sales		INT,
     sls_quantity	INT,
     sls_price		INT,
