@@ -118,7 +118,7 @@ data-warehouse-project/
 │
 ├── tests/                              # Data validation & integrity checks
 │
-├── README.md                           # Project overview & documentation
-├── LICENSE                             # Open-source license
 ├── .gitignore                          # Files ignored by Git
+├── LICENSE                             # Open-source license
+├── README.md                           # Project overview & documentation                         
 └── requirements.txt                    # Dependencies & requirements
