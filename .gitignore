@@ -1,0 +1,34 @@
+# Ignore database backup and transaction logs
+*.bak
+*.trn
+
+# Ignore database dumps
+*.sql
+
+# Ignore log files
+*.log
+
+# Ignore temporary and system files
+*.tmp
+*.swp
+.DS_Store  # macOS system file
+Thumbs.db  # Windows system file
+
+# Ignore IDE-specific settings
+.vscode/
+.idea/
+
+# Ignore Python cache files (if using Python)
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore environment folders (if using virtual environments)
+env/
+venv/
+
+# Ignore datasets (optional: if source CSVs should not be committed)
+datasets/
+
+# Ignore Jupyter Notebook checkpoints (if using Jupyter)
+.ipynb_checkpoints/
