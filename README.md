@@ -43,7 +43,7 @@ This **end-to-end workflow** ensures **high-quality data** is available for anal
 
 ---
 
-## 🔗 Data Sources & Integration
+## Data Sources & Integration
 
 The project integrates **data from two primary systems**:  
 **Customer Relationship Management (CRM)** → Sales transactions, customer details, and product information.  
