@@ -1,6 +1,6 @@
-# 🚀 Data Warehouse Project
+#  Data Warehouse Project
 
-## 📌 Introduction
+## Introduction
 
 Data-driven decision-making is crucial in modern businesses, but **raw data from multiple sources** often lacks structure and consistency. This project aims to build a **scalable and well-structured Data Warehouse** using the **Medallion Architecture** (Bronze, Silver, Gold layers) to **transform raw data into business-ready insights**.
 
@@ -11,14 +11,14 @@ Data-driven decision-making is crucial in modern businesses, but **raw data from
 
 ---
 
-## 🏛️ Medallion Architecture Overview
+## Medallion Architecture Overview
 
 This **Medallion Architecture** follows a **layered approach** to **improve data quality and ensure scalability**.
 
 ### **Understanding Medallion Architecture**
 ![Medallion Architecture](docs/MEDALLION%20ARCHITECTURE.jpg)
 
-📌 **Layers Breakdown**:
+**Layers Breakdown**:
 - **Bronze Layer** → Stores **raw, unprocessed data** as received from various sources (CRM, ERP).  
 - **Silver Layer** → Applies **data cleansing, validation, and structuring** to create a standardized format.  
 - **Gold Layer** → Provides **business-ready** data modeled for reporting and analytics.  
@@ -27,7 +27,7 @@ Each layer refines the data, making it more **trustworthy, accurate, and useful*
 
 ---
 
-## 🔥 Data Warehouse Architecture
+## Data Warehouse Architecture
 
 The following diagram represents the **core architecture of this data warehouse**.  
 It illustrates **how data moves from sources to structured reporting layers**.
@@ -46,8 +46,8 @@ This **end-to-end workflow** ensures **high-quality data** is available for anal
 ## 🔗 Data Sources & Integration
 
 The project integrates **data from two primary systems**:  
-✅ **Customer Relationship Management (CRM)** → Sales transactions, customer details, and product information.  
-✅ **Enterprise Resource Planning (ERP)** → Product categorization, customer birthdates, and location details.
+**Customer Relationship Management (CRM)** → Sales transactions, customer details, and product information.  
+**Enterprise Resource Planning (ERP)** → Product categorization, customer birthdates, and location details.
 
 ### **How Data is Connected Across Systems**
 ![Data Integration](docs/data_integration.jpg)
@@ -58,7 +58,7 @@ The project integrates **data from two primary systems**:
 
 ---
 
-## 🔄 Data Processing Pipeline
+## Data Processing Pipeline
 
 ### **End-to-End Data Flow**
 The data follows a structured **Extract, Transform, Load (ETL) process** as shown below:
@@ -80,14 +80,14 @@ The data follows a structured **Extract, Transform, Load (ETL) process** as show
 
 ---
 
-## 📊 Data Modeling (Star Schema)
+## Data Modeling (Star Schema)
 
 The **Gold Layer** follows a **Star Schema** to improve query performance and optimize data for analytics.
 
 ### **Sales Data Mart - Star Schema**
 ![Sales Data Mart](docs/DATA%20MART%20STAR%20SCHEMA.jpg)
 
-📌 **Schema Details**:
+**Schema Details**:
 - **Fact Table**: `fact_sales` stores **transactional data** like orders, revenue, and quantities.  
 - **Dimension Tables**:
   - `dim_customers` → Contains **customer details** like name, location, and demographics.  
@@ -97,7 +97,7 @@ This **denormalized schema** ensures **fast query performance** for analytics.
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
 
 ```plaintext
 data-warehouse-project/
